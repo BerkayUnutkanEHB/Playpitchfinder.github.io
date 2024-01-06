@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/loginstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="/web2-course-project-back-end-BerkayUnutkanEHB/backend/login.js"></script>
+    <title>Login - PlayPitchFinder</title>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="/frontend/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="54" viewBox="0 0 400 54">
+                <text id="PlayPitchFinder" transform="translate(0 44)" fill="#fff" font-size="25"
+                    font-family="EASPORTS, 'EA Font v1\.5 by Ghettoshark'">
+                    <tspan x="0" y="0">Play</tspan>
+                    <tspan y="0" fill="#c90e0e">Pitch</tspan>
+                    <tspan y="0">Finder</tspan>
+                </text>
+            </svg>
+        </a>
+    </div>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">
+                <i class="fas fa-user"></i>
+                <span>E-mailadres:</span>
+            </label>
+            <input type="text" id="username" name="username" placeholder="Typ uw e-mailadres..." required>
+
+            <label for="password">
+                <i class="fas fa-lock"></i>
+                <span>Wachtwoord:</span>
+            </label>
+            <input type="password" id="password" name="password" placeholder="Typ uw wachtwoord..." required>
+            <div id="login-message"></div>
+            <button type="submit">Inloggen</button>
+        </form>
+
+        <div class="signup-link">
+            <p>Nog geen account? <a href="/frontend/registration.html">Word nu lid</a>.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* Voetbalvelden*/
+
+.voetbalvelden-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.fields-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.voetbalvelden-content {
+    display: flex;
+    width: 60%;
+    align-items: flex-start;
+}
+
+.fields-container {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -650px;
+    margin-bottom: 200px;
+}
+
+
+.field-block {
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.filter-section {
+    width: 20%;
+    margin-left: 40px;
+}
+
+.filter-option {
+    display: block;
+}
+
+.filter-option label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field-row {
+    width: calc(70% - 20px);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+
+.field-row2 {
+    width: calc(80% - 20px);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+/*sorteer*/
+.sort-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 200px;
+    margin-right: 50px;
+}
+
+label {
+    color: #fff;
+    margin-right: 5px;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}

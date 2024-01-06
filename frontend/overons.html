@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <script src="/web2-course-project-back-end-BerkayUnutkanEHB/backend/zoekbalk.js"></script>
+    <script src="/web2-course-project-back-end-BerkayUnutkanEHB/backend/login.js"></script>
+    <style>
+        /* zoekbalk verwijderen */
+        #search-input,
+        #search-button {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous" />
+
+    <title>PlayPitchFinder | Over Ons</title>
+</head>
+
+<body class="over-ons">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/frontend/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="54" viewBox="0 0 400 54">
+                        <text id="PlayPitchFinder" transform="translate(0 44)" fill="#fff" font-size="25"
+                            font-family="EASPORTS, 'EA Font v1\.5 by Ghettoshark'">
+                            <tspan x="0" y="0">Play</tspan>
+                            <tspan y="0" fill="#c90e0e">Pitch</tspan>
+                            <tspan y="0">Finder</tspan>
+                        </text>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <a href="/frontend/index.html">Home</a>
+                <a href="/frontend/overons.html">Over Ons</a>
+                <a href="/frontend/voetbalvelden.html">Voetbalvelden</a>
+                <a href="/frontend/login.html" class="login-icon" id="login-link"><i class="fas fa-user"></i></a>
+                <span id="username-display"></span>
+                <a href="#" class="filter-icon"><i class="fas fa-search"></i></a>
+                <input type="text" id="search-input" placeholder="Zoeken..." list="suggestions">
+                <datalist id="suggestions"></datalist>
+                <button id="search-button">Zoeken</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <img src="/frontend/img/Image5.png" alt="Voetbalveld">
+        <div class="overlay"></div>
+        <div class="welcome-text">
+            <h1>OVER ONS</h1>
+        </div>
+    </section>
+    <section class="about-us-section">
+        <div class="about-us-content">
+            <h2>Over Ons</h2>
+            <div class="red-line"></div>
+            <p>Ontdek de ultieme bestemming voor voetballiefhebbers! Bij Play Pitch Finder streven we ernaar om je te
+                voorzien van alles wat je nodig hebt om het perfecte voetbalveld te vinden voor jou en je team. Of je nu
+                op zoek bent naar een veld om met vrienden te spelen, een competitiewedstrijd te organiseren, of gewoon
+                een leuke pot voetbal wilt spelen, wij hebben je gedekt.</p>
+            <p>Blader door onze uitgebreide database van voetbalvelden, vind velden bij jou in de buurt, en ontdek alle
+                details die je nodig hebt om de juiste keuze te maken. Van veldkwaliteit tot openingstijden, van kosten
+                tot beschikbare voorzieningen, we hebben alle informatie die je nodig hebt om jouw voetbalervaring naar
+                een hoger niveau te tillen. Begin nu met het verkennen en maak je klaar om te scoren!</p>
+        </div>
+        <div class="football-field-image">
+            <img src="/frontend/img/Image 7.png" alt="Voetbalveld">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Geef nu Feedback!</h3>
+            <div class="red-line"></div>
+            <p>
+                Heb je suggesties of opmerkingen over je ervaring met Play Pitch Finder?
+                We horen graag van je! Jouw feedback helpt ons om onze service te verbeteren en ervoor te zorgen dat we
+                aan jouw verwachtingen voldoen.
+                Aarzel niet om contact met ons op te nemen en jouw gedachten met ons te delen.
+                Samen werken we aan een betere voetbalervaring voor iedereen.
+            </p>
+            <a href="/frontend/feedback.html" class="cta-button">
+                <i class="fas fa-comment"></i> Feedback geven
+            </a>
+
+        </div>
+
+        <div class="footer-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="54" viewBox="0 0 400 54">
+                <text id="PlayPitchFinder" transform="translate(0 44)" fill="#fff" font-size="25"
+                    font-family="EASPORTS, 'EA Font v1\.5 by Ghettoshark'">
+                    <tspan x="0" y="0">Play</tspan>
+                    <tspan y="0" fill="#c90e0e">Pitch</tspan>
+                    <tspan y="0">Finder</tspan>
+                </text>
+            </svg>
+        </div>
+
+        <div class="footer-section">
+            <h3>Menu</h3>
+            <div class="red-line"></div>
+            <nav>
+                <ul>
+                    <li><a href="/frontend/index.html">Home</a></li>
+                    <li><a href="/frontend/overons.html">Over Ons</a></li>
+                    <li><a href="/frontend/voetbalvelden.html">Voetbalvelden</a></li>
+                    <li><a href="/frontend/login.html">Log In</a></li>
+                    <li><a href="/frontend/feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

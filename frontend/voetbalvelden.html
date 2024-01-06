@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/frontend/velden.css">
+    <script type="module" src="/web2-course-project-back-end-BerkayUnutkanEHB/backend/voetbalvelden.js"></script>
+    <script type="module" src="/web2-course-project-back-end-BerkayUnutkanEHB/backend/zoekbalk.js"></script>
+    <script src="/web2-course-project-back-end-BerkayUnutkanEHB/backend/login.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <script></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous" />
+    <style>
+        /* zoekbalk verwijderen */
+        #search-input,
+        #search-button {
+            display: none;
+        }
+    </style>
+    <title>Voetbalvelden - PlayPitchFinder</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/frontend/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="54" viewBox="0 0 400 54">
+                        <text id="PlayPitchFinder" transform="translate(0 44)" fill="#fff" font-size="25"
+                            font-family="EASPORTS, 'EA Font v1\.5 by Ghettoshark'">
+                            <tspan x="0" y="0">Play</tspan>
+                            <tspan y="0" fill="#c90e0e">Pitch</tspan>
+                            <tspan y="0">Finder</tspan>
+                        </text>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <a href="/frontend/index.html">Home</a>
+                <a href="/frontend/overons.html">Over Ons</a>
+                <a href="/frontend/voetbalvelden.html">Voetbalvelden</a>
+                <a href="/frontend/login.html" class="login-icon" id="login-link"><i class="fas fa-user"></i></a>
+                <span id="username-display"></span>
+                <a href="#" class="filter-icon"><i class="fas fa-search"></i></a>
+                <input type="text" id="search-input" placeholder="Zoeken..." list="suggestions">
+                <datalist id="suggestions"></datalist>
+                <button id="search-button">Zoeken</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="fields-section">
+        <div class="main-container">
+            <h1 class="fields-title">VOETBALVELDEN</h1>
+            <!-- Voetbalvelden -->
+            <div class="filter-section">
+                <h2>Filter By</h2>
+                <div class="filter-option">
+                    <!-- Plaatsen -->
+                    <h3>Plaatsen</h3>
+                    <label><input type="checkbox" name="place" value="Asse"> Asse</label>
+                    <label><input type="checkbox" name="place" value="Aalst"> Aalst</label>
+                    <label><input type="checkbox" name="place" value="Mollem"> Mollem</label>
+                    <label><input type="checkbox" name="place" value="Meldert"> Meldert</label>
+                    <!-- Type -->
+                    <h3>Type</h3>
+                    <label><input type="checkbox" name="type" value="Natuurgras"> Natuurgras</label>
+                    <label><input type="checkbox" name="type" value="Syntetisch"> Syntetisch</label>
+                    <!-- Beschikbaarheid -->
+                    <h3>Beschikbaarheid</h3>
+                    <label><input type="checkbox" name="availability" value="7/24"> 7/24</label>
+                    <label><input type="checkbox" name="availability" value="avond"> Avond</label>
+                    <label><input type="checkbox" name="availability" value="dag"> Dag</label>
+                    <!-- Voorzieningen -->
+                    <h3>Voorzieningen</h3>
+                    <label><input type="checkbox" name="facilities" value="doelen"> Doelen</label>
+                    <label><input type="checkbox" name="facilities" value="doelen"> Lichten</label>
+                    <label><input type="checkbox" name="facilities" value="doelen"> Doelnetten</label>
+                </div>
+            </div>
+
+            <div class="fields-container">
+                <!-- Sorteer -->
+                <div class="sort-section">
+                    <label for="sort">Sorteer op:</label>
+                    <select id="sort" name="sort">
+                        <option value="afstand">Afstand</option>
+                        <option value="kwaliteit">Kwaliteit</option>
+                        <option value="populariteit">Populariteit</option>
+                        <option value="alfabetisch">Alfabetisch</option>
+                    </select>
+                </div>
+                <!-- Voetbalveld blokken -->
+                <div class="field-row" id="fields-section">
+                    <!-- JavaScript vr voetbalvelden -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Geef nu Feedback!</h3>
+            <div class="red-line"></div>
+            <p>
+                Heb je suggesties of opmerkingen over je ervaring met Play Pitch Finder?
+                We horen graag van je! Jouw feedback helpt ons om onze service te verbeteren en ervoor te zorgen dat we
+                aan jouw verwachtingen voldoen.
+                Aarzel niet om contact met ons op te nemen en jouw gedachten met ons te delen.
+                Samen werken we aan een betere voetbalervaring voor iedereen.
+            </p>
+            <button class="cta-button"><i class="fas fa-comment"></i> Feedback geven</button>
+        </div>
+
+        <div class="footer-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="54" viewBox="0 0 400 54">
+                <text id="PlayPitchFinder" transform="translate(0 44)" fill="#fff" font-size="25"
+                    font-family="EASPORTS, 'EA Font v1\.5 by Ghettoshark'">
+                    <tspan x="0" y="0">Play</tspan>
+                    <tspan y="0" fill="#c90e0e">Pitch</tspan>
+                    <tspan y="0">Finder</tspan>
+                </text>
+            </svg>
+        </div>
+
+        <div class="footer-section">
+            <h3>Menu</h3>
+            <div class="red-line"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Over Ons</a></li>
+                    <li><a href="#">Voetbalvelden</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
