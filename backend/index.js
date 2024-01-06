@@ -9,8 +9,6 @@ require('dotenv').config()
 //Create mongoclient
 const client = new MongoClient(process.env.FINAL_URL)
 
-const port = process.env.port || 1337;
-
 app.use(express.urlencoded({ extended: false }));
 app.use(cors())
 app.use(express.json())
